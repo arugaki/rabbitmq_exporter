@@ -29,6 +29,7 @@ var (
 		"sockets_total":   newGaugeVec("sockets_available", "File descriptors available for use as sockets", nodeLabels),
 		"partitions_len":  newGaugeVec("partitions", "Current Number of network partitions. 0 is ok. If the cluster is splitted the value is at least 2", nodeLabels),
 		"proc_used":       newGaugeVec("proc_used", "Used Erlang Processes", nodeLabels),
+		"proc_total":       newGaugeVec("proc_max", "Max Erlang Processes", nodeLabels),
 	}
 )
 
